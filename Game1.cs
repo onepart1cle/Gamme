@@ -6,12 +6,12 @@ namespace Gamme;
 
 public class Game1 : Game
 {
-    private GraphicsDeviceManager _graphics;
-    private SpriteBatch _spriteBatch;
+    private GraphicsDeviceManager graphics;
+    private SpriteBatch spriteBatch;
 
     public Game1()
     {
-        _graphics = new GraphicsDeviceManager(this);
+        graphics = new GraphicsDeviceManager(this);
         Content.RootDirectory = "Content";
         IsMouseVisible = true;
     }
@@ -20,12 +20,13 @@ public class Game1 : Game
     {
         // TODO: Add your initialization logic here
 
+
         base.Initialize();
     }
 
     protected override void LoadContent()
     {
-        _spriteBatch = new SpriteBatch(GraphicsDevice);
+        spriteBatch = new SpriteBatch(GraphicsDevice);
 
         // TODO: use this.Content to load your game content here
     }
